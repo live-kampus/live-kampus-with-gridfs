@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="card-header">
+        User List
+    </div>
+
+    <table class="table table-bordered city-table">
+        <thead class="thead-light">
+            <tr>
+                <th>User Id</th>
+                <th>User Name</th>
+                <th>User Details</th>
+                <th>Status</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let user of profile">
+                <td>{{user.userId}}</td>
+                <td>{{user.userName}}</td>
+                <td>
+                    <button type="button" routerLink="/userdetails" class="btn btn-primary view-btn" style="width: 30%"
+                        routerLink="userdetails">View</button>
+                </td>
+                <td>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

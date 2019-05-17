@@ -1,0 +1,159 @@
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="central-meta">
+                <button type="button" class="btn btn-primary event-btn"  data-toggle="modal" data-target="#addEvent">Add Event</button>
+                <div class="frnds">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active frnd-btn" data-toggle="pill" href="#recommended">Recommended</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link frnd-btn"  data-toggle="pill" href="#today">Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link frnd-btn"  data-toggle="pill" href="#upcoming">Upcoming</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content" *ngFor="let evnt of events">
+                        <div class="tab-pane container active" id="recommended">
+                            <ul class="nearby-contct">
+                                <li  >
+                                    <a href="" class="nearly-pepls" data-toggle="modal" data-target="#detailModal" (click)="eventR(evnt.eventName)">
+                                        <figure>
+                                            <img [src]="url" alt="">
+                                        </figure>
+                                        <div class="pepl-info">
+                                            <h4>{{evnt.eventName}}</h4>
+                                            <i class="fa fa-circle"></i>
+                                            <span>{{evnt.eventDate}}</span>
+                                            <span>  {{evnt.eventTime}}</span><br>
+                                            <i class="fa fa-circle"></i>
+                                            <address>{{evnt.eventVenue}}</address>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="today">
+                            <ul class="nearby-contct">
+                                <li>
+                                    <a href="" class="nearly-pepls"  data-toggle="modal" data-target="#detailModal" >
+                                        <figure>
+                                            <img src="assets/images/friend-avatar9.jpg" alt="">
+                                        </figure>
+                                        <div class="pepl-info">
+                                            <h4>Dance Event</h4>
+                                            <i class="fa fa-circle"></i>
+                                            <span>May 14,</span>
+                                            <span>4 PM</span>
+                                            <i class="fa fa-circle"></i>
+                                            <address>Capgemini Knowledge Park,Airoli</address>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane container fade" id="upcoming">
+                            <ul class="nearby-contct">
+                                <li>
+                                    <a href="" class="nearly-pepls"  data-toggle="modal" data-target="#detailModal" >
+                                        <figure>
+                                            <img src="assets/images/friend-avatar9.jpg" alt="">
+                                        </figure>
+                                        <div class="pepl-info">
+                                            <h4>Dance Event</h4>
+                                            <i class="fa fa-circle"></i>
+                                            <span>May 14,</span>
+                                            <span>4 PM</span>
+                                            <i class="fa fa-circle"></i>
+                                            <address>Capgemini Knowledge Park,Airoli</address>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="detailModal" role="dialog" >
+            <div class="modal-dialog">
+                <div class="modal-content" >
+                    <div class="modal-header" >
+                        <h4 class="modal-title">Dance Event</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <figure>
+                            <img [src]="url"  alt="">
+                        </figure>
+                        <div class="event-card">
+                            <div class="date">
+                                <i class="fa fa-calendar event-date"></i>           
+                                <span class="day">{{event.eventDate}}</span>&nbsp;
+                                <span>{{event.eventTime}}</span>
+                            </div>
+                            <div class="address">
+                                <i class="fa fa-map-marker"></i>
+                                <span class="address-details"> {{event.eventVenue}}</span>        
+                            </div>
+                            <div class="hosted-by">
+                                <h4 class="host">Hosted By: </h4>
+                                <span>{{event.eventhostedBy}}</span>
+                            </div>
+                            <div class="event-btns">
+                                <button type="button" class="btn btn-primary going-btn" (click)="btnCounter()">Going</button>
+                             
+                            </div>
+                            <span class="count">200 people going</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="modal fade" id="addEvent" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Add Event</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body event-body">
+                            <form (ngSubmit)="addNewEvents()" #eventForm="ngForm" enctype='multipart/form-data'>
+                                {{ eventForm.value| json}}
+                                <div class="form-group">
+                                    <label for="event-name" class="form-label">Event Name</label>
+                                    <input type="text" class="form-control" [(ngModel)]="event.eventName" name="event_name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-date" class="form-label">Event Date</label>
+                                    <input type="date" class="form-control" [(ngModel)]="event.eventDate" name="event_date" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="event-time" class="form-label">Event Time</label>
+                                    <input type="time" class="form-control" [(ngModel)]="event.eventTime" name="event_time"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="venue" class="form-label">Event Venue</label>
+                                    <input type="text" class="form-control" [(ngModel)]="event.eventVenue" name="event-venue"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="host" class="form-label">Hosted By</label>
+                                    <input type="text" class="form-control" [(ngModel)]="event.eventhostedBy" name="event_hostedby"/>
+                                </div>   
+                                <div class="form-group">
+                                    <label for="photo" class="form-label">Upload Image</label>
+                                    <input type="file" class="form-control file-control" (change)="onFileSelected($event)" 
+                                    id="exampleFormControlFile1" [(ngModel)]="images.filePath" id="filePath" name="filePath" accept="*/*" />
+                                </div>  
+                                <button type="submit" class="btn btn-primary evnt-btn">Submit</button>                       
+                            </form>
+                        </div>
+                </div>
+            </div>
+            
+            

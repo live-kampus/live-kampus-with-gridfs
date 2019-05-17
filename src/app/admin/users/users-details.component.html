@@ -1,0 +1,192 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">User Details</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="image-wrapper text-center">
+                        <img src="assets/images/image1.jpg" class="image-responsive" width="40%" height="60%">
+                    </div>
+                    <br><br>
+                    <div class="containertable" style="text-align:center">
+                        <table class="table table-bordered">
+                            <tbody *ngFor="let user of profile">
+                                
+                                <tr>
+                                    <td>Name</td>
+                                    <td>{{user.userName}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email Id</td>
+                                    <td>{{user.emailId}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>{{user.userAddress}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact</td>
+                                    <td>{{user.userContact}}</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>{{user.userCity}}</td>
+
+                                </tr>
+                                <tr>
+                                    <td>State</td>
+                                    <td>{{user.userState}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>{{user.userGender}}</td>
+                                </tr>
+                                <tr>
+                                    <td>School Name</td>
+                                    <td>{{user.userSchoolName}}</td>
+                                </tr>
+                                <tr>
+                                    <td>DOB</td>
+                                    <td>{{user.userDoB}}</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bio</td>
+                                    <td>
+                                        <p>
+                                            {{user.userBio}}
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div id="tabs" #tabs>
+
+                        <ul class="nav nav-tabs text-center">
+
+                            <li class="nav-item active">
+                                <a class="nav-link upcoming" href="#shots" data-toggle="tab">Shots
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link upcoming" href="#friends" data-toggle="tab">Friends</a>
+                            </li>
+                            <li>
+                                <a class="nav-link upcoming" href="#bio" data-toggle="tab">Bio</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="shots" class="tab-pane fade active show">
+                                <div class="friend-info">
+                                    <figure>
+                                        <img src="" alt="">
+                                    </figure>
+                                    <div class="friend-name">
+                                        <a href="time-line.html" title="">{{profile.name}}</a>
+                                        <span>published: june,2 2018 19:PM</span>
+                                    </div>
+                                    <div class="post-meta">
+                                        <img src={{profile.timelinepost}} alt="">
+                                        <div class="we-video-info">
+                                            <ul>
+                                                <li>
+                                                    <span class="like" data-toggle="tooltip" title="" data-original-title="like">
+                                                        <i class="fa fa-heart"></i>
+                                                        <span>2.2k</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="description">
+                                            <p>
+                                                <a href="#" title="">{{profile.tag}}</a>
+                                                <br>
+                                                {{profile.caption}}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="friends" class="tab-pane fade">
+                              
+                                     <ul class="nearby-contct">
+                                        <li>
+                                            <div class="nearly-pepls">
+                                                <figure>
+                                                    <a href="#" title=""><img src={{profile.friend1}} alt=""></a>
+                                                </figure>
+                                                <div class="pepl-info">
+                                                    <h4><a href="#" title="">{{profile.friend1name}}</a></h4>
+                                                    
+                                                  
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="nearly-pepls">
+                                                <figure>
+                                                    <a href="#" title=""><img src={{profile.friend1}} alt=""></a>
+                                                </figure>
+                                                <div class="pepl-info">
+                                                    <h4><a href="#" title="">{{profile.friend2name}}</a></h4>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                            
+                            </div>
+                            <div id="bio" class="tab-pane fade active show">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>{{profile.userName}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Address</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>State</td>                    
+                                            <td>{{profile.state}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>City</td>
+                                            <td>{{profile.city}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>School</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gender</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>DOB</td>
+                                            <td></td>
+                                        </tr>
+            
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>

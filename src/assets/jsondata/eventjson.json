@@ -1,0 +1,13 @@
+[
+    {
+        "eventId": 101,     
+        "eventName": "Dance Event",
+        "eventTopic": "annual",
+        "eventDate":"26/09/1994",
+        "eventVenue":"Pune",
+        "eventHost":"DYP college",
+        "totNoOfPeople":100
+        
+       
+    }
+]

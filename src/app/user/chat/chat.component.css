@@ -1,0 +1,342 @@
+
+a.logo{
+    width: 5%;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar-form> .search-wrapper {
+    position: relative;
+    margin: 7px 0;
+}
+
+.form-group .fa-search {
+    position: absolute;
+    right: 16px;
+    top: 9px;
+    color:#575b5f;
+}
+
+input.search-box{
+    border: 1px solid #575b5f;
+}
+
+.form-group input.form-control {
+    background: rgba(255,255,255, 0.2);
+    box-shadow: none;
+    min-width: 288px;
+    color: #575b5f;
+    height: 32px;
+    font-size: 13px;
+}
+
+.header-icon{
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+    color: #999;
+}
+
+.header-icon i {
+    font-size: 20px;
+}
+
+.header-icon li{
+    padding-right: 20px;
+}
+
+
+.naves{
+    list-style-type: none;
+}
+
+.body-wrapper {
+    background: #f4f2f2;
+}
+
+.widget{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+}
+
+.body-wrapper > .container {
+    padding-top: 50px;
+}
+
+.widget > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 50px 25px 20px;
+    width: 100%;
+}
+
+.widget > ul >li {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.widget > ul > li i{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: baseline;
+    color: #999;
+    margin-right: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.widget ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+}
+
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.f-title {
+    font-size: 17.5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid #df3826;
+}
+
+.message-box {
+    display: inline-block;
+    width: 100%;
+}
+
+.peoples {
+    border-right: 1px solid #e1e8ed;
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    max-height: 462px;
+    padding-left: 0;
+    position: relative;
+    width: 200px;
+}
+
+.ps-container {
+    height: 500px;
+    width: 200px;
+    overflow-y: scroll;
+}
+
+.peoples > li {
+    border-bottom: 1px solid #e1e8ed;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    width: 100%;
+    position: relative;
+    transition: all 0.2s linear 0s; 
+}
+
+.peoples > li figure {
+    display: inline-block;
+    margin-bottom: 0;
+    max-width: 45px;
+    min-width: 45px;
+    vertical-align: middle;
+    width: 45px;
+    position: relative;
+}
+
+.peoples > li figure img ,
+.conversation-head > figure {
+    border-radius: 100%;
+}
+
+.people-name {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 66%;
+    color:#000000ad;
+}
+
+.people-name > span {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.peoples-mesg-box > ul.chatting-area {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    max-height: 322px;
+    padding: 40px 15px 10px 0;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.peoples-mesg-box > ul li {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.peoples-mesg-box > ul li > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    max-width: 32px;
+    min-width: 32px;
+    width: 32px;
+    vertical-align: top;
+}
+
+.peoples-mesg-box > ul > li p {
+    display: inline-block;
+    font-size: 14px;
+    line-height: initial;
+    margin-bottom: 0;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 75%;
+    padding: 5px 8px;
+    position: relative;
+    color: #434343;
+    background: rgba(39, 170, 225, 0.1);
+}
+
+.ps-container>.ps-scrollbar-x-rail {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: background-color .2s linear,opacity .2s linear;
+    -o-transition: background-color .2s linear,opacity .2s linear;
+    -moz-transition: background-color .2s linear,opacity .2s linear;
+    transition: background-color .2s linear,opacity .2s linear;
+    bottom: 0;
+    height: 15px;
+}
+
+.ps-container>.ps-scrollbar-y-rail {
+    display: none;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: background-color .2s linear,opacity .2s linear;
+    -o-transition: background-color .2s linear,opacity .2s linear;
+    -moz-transition: background-color .2s linear,opacity .2s linear;
+    transition: background-color .2s linear,opacity .2s linear;
+    right: 0;
+    width: 15px;
+}
+
+.ps-container.ps-active-x>.ps-scrollbar-x-rail, .ps-container.ps-active-y>.ps-scrollbar-y-rail {
+    display: block;
+    background-color: transparent;
+}
+
+.peoples-mesg-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 64.5%;
+    padding-left: 15px;
+}
+
+.conversation-head {
+    border-bottom: 1px solid #eaeaea;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.conversation-head > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    max-width: 45px;
+    vertical-align: middle;
+    width: 45px;
+}
+
+.conversation-head > span {
+    display: inline-block;
+    font-weight: bold;
+    line-height: initial;
+    margin-left: 10px;
+    text-transform: capitalize;
+    vertical-align: middle;
+    width: 83%;
+    font-size: 18px;
+}
+
+.peoples-mesg-box > ul li.me {
+    direction: rtl;
+    text-align: right;
+}
+
+.message-text-container > form {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.message-text-container textarea {
+    border-radius: 0;
+    box-sizing: content-box;
+    color: #7f7f7f;
+    height: 50px;
+    overflow: hidden;
+    resize: none;
+    display: inline-block;
+    width: 93.5%;
+}
+
+.message-text-container form button {
+    color: #00a0d0;
+    border-radius: 100%;
+    height: 30px;
+    padding: 0;
+    position: absolute;
+    right: 39px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    border: none;
+}
+
+.f-title .fa-bell {
+    margin-right: 8px;
+    color: #df3826;
+}
+
+a.underline:before {
+    background: #088dcd;
+}

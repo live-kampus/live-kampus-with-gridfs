@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+  padding: 6px 100px;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,.08);
+}
+
+.banner {
+    background: url('../assets/images/main-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+.logo {
+    width: 14%;
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.live-head{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+}
+
+.live-social{
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.overview-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    width: 79%;
+    margin: 0 auto;
+}
+

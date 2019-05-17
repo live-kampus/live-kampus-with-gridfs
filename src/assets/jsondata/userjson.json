@@ -1,0 +1,25 @@
+[
+    {
+        "userId": 101,
+        "userName": "shachi sheth",
+        "emailId": "shachisheth94@gmail.com",
+        "userAddress": "Maharashtra",
+        "userContact": 7896541230,
+        "userCity": "Pune",
+        "userState": "Maharashtra",
+        "userGender": "Female",
+        "userSchoolName": "DYPCOE",
+        "userDoB": "26/09/1994",
+        "userBio": "So, you probably already know how to add your website link in your Instagram bio",
+        "imageUrl":"assets/images/img1.jpg",
+        "imageUrl1":"assets/images/img2.jpg",
+        "imageUrl2":"assets/images/img3.jpg",
+        "imageUrl3":"assets/images/img4.jpg",
+        "imageUrl4":"assets/images/img4.jpg",
+        "imageUrl5":"assets/images/img2.jpg",
+        "imageUrl6":"assets/images/img1.jpg"
+     
+        
+
+    }
+]

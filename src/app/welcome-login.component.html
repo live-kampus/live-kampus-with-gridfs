@@ -1,0 +1,23 @@
+<div class="" id="login-page" [class.d-none] = "submitted" >
+    <div class="form-box">
+        <div class="form-logo">
+            <p class="text-center"><img src="../assets/images/lvk-logo.png" alt="logo"></p>
+        </div>
+        <form (ngSubmit)="loginUser()" #loginForm="ngForm">
+            <input type="text" class="form-control" placeholder="Email Id" [(ngModel)]="user.email" id="email" name="email" #email="ngModel"
+            [class.is-invalid]="email.touched && email.invalid" required>
+            <div class="text-danger" [class.d-none]="email.valid || email.untouched">Email is required</div>
+            <input type="password" class="form-control" placeholder="Password" [(ngModel)]="user.password" id="password" name="password"
+            #password="ngModel" [class.is-invalid]="password.touched && password.invalid" required>
+            <div class="text-danger" [class.d-none]="password.valid || password.untouched"> Password is required</div>
+            <input type="submit" class="btn btn-social" value="LOGIN" [disabled]="loginForm.form.invalid"/>
+            
+           
+            <a routerLink="/signup" class="login-action" title="Sign up">
+                <p>New User?&nbsp;Signup</p>
+            </a>
+            <button class="btn btn-lg btn-google btn-block  gbutton" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Github</button>
+            <button class="btn btn-lg btn-facebook btn-block  lbutton" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with LinkedIn</button>
+        </form>
+    </div>
+</div>

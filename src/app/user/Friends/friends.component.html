@@ -1,0 +1,88 @@
+<div class="row">
+		<div class="col-md-12">
+			<div class="central-meta">
+				<div class="frnds">
+					<ul class="nav nav-pills">
+						<li class="nav-item">
+							<a class="nav-link active frnd-btn" data-toggle="pill" href="#myfriend">My Friends</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link frnd-btn" data-toggle="pill" href="#friendRequest">Friend Request</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link frnd-btn" data-toggle="pill" href="#searchfriends">Search Friend</a>
+						</li>
+					</ul>
+	
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane container active" id="myfriend">
+							<ul class="nearby-contct">
+								<li *ngFor="let friend of user4.friends">
+									<div class="nearly-pepls">
+										<figure>
+											<a href="#" title=""><img src="assets/images/friend-avatar9.jpg" alt=""></a>
+										</figure>
+										<div class="pepl-info">
+											<h4><a title="" class="frndname">
+													<td>{{friend}}</td>
+												</a></h4>
+	
+											<button (click)="del(friend)" title="" class="btn btn-primary">Unfriend</button>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+						<div class="tab-pane container fade" id="friendRequest">
+							<ul class="nearby-contct">
+								<li *ngFor="let user of user1.requests">
+									<div class="nearly-pepls" id="confirm-box">
+										<figure>
+											<a href="#" title=""><img src="assets/images/friend-avatar9.jpg" alt=""></a>
+										</figure>
+										<div class="pepl-info" >
+											<h4><a title="" class="frndname">
+													<td>{{user}}</td>
+												</a></h4>
+	
+											<button (click)="confirm(user)" title="" class="btn btn-primary">Confirm</button>
+										</div>
+									</div>
+								</li>
+							
+	
+							</ul>
+						</div>
+						<div class="tab-pane container fade" id="searchfriends">
+							<div ng-app="myApp" ng-controller="namesCtrl">
+								<form (ngSubmit)="search()" #userForm="ngForm">
+									<input type="text" ng-model="test" name="search" id="search" class="frnd-search"
+										placeholder="Search Friend by name">
+									<input type="submit" value="Search" />
+								</form>
+								<ul class="nearby-contct">
+									<li *ngFor="let user1 of users">
+										<div class="nearly-pepls">
+											<figure>
+												<a href="#" title=""><img src="assets/images/friend-avatar9.jpg" alt=""></a>
+											</figure>
+											<div class="pepl-info">
+												<h4><a title="" class="frndname">
+														<td>{{user1.name}}</td>
+													</a></h4>
+	
+												<button (click)="request(user1.email)" title="" class="btn btn-primary" id="addbtn" >Add
+													Friend</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

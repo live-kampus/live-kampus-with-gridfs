@@ -1,0 +1,78 @@
+<!-- <router-outlet></router-outlet> -->
+
+<header class="head">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand logo" href="#">
+            <img src="assets/images/lvk-logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <form class="navbar-form navbar-right hidden-sm">
+                    <div class="form-group search-wrapper">
+                        <i class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="Search friends, photos, videos">
+                    </div>
+                </form>
+            </ul>
+        </div>
+        <span>{{user.email}}</span>
+        <ul class="header-icon">
+            <li>
+                <i class="fa fa-bell" aria-hidden="true"  routerLink="notifications" ></i>
+            </li>
+            <li>
+                <i class='far fa-comment-alt' routerLink="chat" ></i>
+            </li>
+            <li>
+                <i class='fa fa-user' routerLink="friends"></i>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="body-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="widget">
+                    <ul class="naves">
+                        <li>
+                            <i class="fa fa-clipboard"></i>
+                            <a routerLink="/user" title="">News Feed</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-user-circle"></i>
+                            <a routerLink="profile" title="">Profile</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-calendar"></i>
+                            <a  routerLink="events"  title="">Events</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-hotel"></i>
+                            <a routerLink="roomspace" title="">Room Spaces</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-bell"></i>
+                            <a  routerLink="notifications"  title="">Notifications</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-power-off"></i>
+                            <a routerLink="/logout" title="">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

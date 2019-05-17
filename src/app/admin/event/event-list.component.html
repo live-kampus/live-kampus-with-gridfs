@@ -1,0 +1,48 @@
+<div class="container">
+
+    <div class="card event-list">
+        <div class="card-header">Event List</div>
+        <div class="card-body">
+            <div id="tabs" #tabs>
+
+                <ul class="nav nav-tabs text-center">
+                    <li class="nav-item">
+                        <a class="nav-link upcoming" href="#results" data-toggle="tab">Today's Event</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link upcoming" href="#results" data-toggle="tab">Upcoming Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link recommended" href="#results" data-toggle="tab">Recommended Event</a>
+                    </li>
+                </ul>
+                <table class="table table-bordered event-table events">
+                    <thead class="thead-light">
+                        <tr>
+                            <!-- <th>Event Code</th> -->
+                            <th>Event Name</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let event of events ">
+                            <!-- <td>{{event.eventId}}</td> -->
+                            <td>{{event.eventName}}</td>
+                            <td>
+                                <button type="button" routerLink="eventdetails" class="btn btn-primary view-btn">View</button>
+                            </td>
+                            <td>
+                                <button type="button" class="btn btn-primary del" click="delbtn(event.eventName)">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,55 @@
+
+img {
+    width: 100%;
+}
+
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+
+.drop-btn {
+    display: inline-block;
+    border: 1px solid ;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter > span {
+    margin-right: 16px;
+}
+
+.rooms {
+    margin-top: 20px;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card h5 {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 5px 0 0;
+}
+
+.payment-btn {
+    margin: 0 auto;
+    display: block;
+    width: 38%;
+}

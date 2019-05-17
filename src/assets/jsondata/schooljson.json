@@ -1,0 +1,16 @@
+[
+        {
+            "schoolId": 101,     
+            "schoolName": "DYPCOE",
+            "schoolCity": "Pune",
+            "schoolState": "Maharashtra"
+           
+        },
+        {
+            "schoolId": 102,     
+            "schoolName": "DYPCOE",
+            "schoolCity": "Pune",
+            "schoolState": "Maharashtra"
+           
+        }
+    ]

@@ -1,0 +1,401 @@
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.user-avatar {
+    border: 8px solid rgba(255, 255, 255, 0.8);
+    border-radius: 3px 25px 0;
+    box-shadow: 0 1px 0 #e1e8ed;
+    float: right;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.user-avatar > figure {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.user-avatar > figure > img {
+    width: 100%;
+}
+
+.edit-phto {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    bottom: 100px;
+    color: #fff;
+    left: 275px;
+    padding: 5px 20px;
+    position: absolute;
+    z-index: 9;
+    border-radius: 3px;
+    border: 1px solid transparent;
+}
+
+.user-avatar .edit-phto {
+    border-radius: 0;
+    bottom: -40px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: all 0.3s linear 0s;
+    padding: 5px;
+    text-align: center;
+}
+
+.user-avatar:hover .edit-phto {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.user-avatar:hover .edit-phto{
+    background: #088dcd;
+}
+
+.edit-btn {
+    margin-top: 22px;
+}
+
+.user-avatar .edit-phto {
+    border-radius: 0;
+    bottom: -40px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    transition: all 0.3s linear 0s;
+    padding: 5px;
+    text-align: center;
+}
+
+.fileContainer {
+    color: #d8d8d8;
+    font-size: 11px;
+    margin: 0 0 0 5px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.edit-phto .fileContainer [type="file"] {
+    height: 35px;
+    top: -11px;
+    width: 126px;
+}
+
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.new-postbox {
+    display: inline-block;
+    width: 100%;
+}
+
+.new-postbox > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+    width: 10.4%;
+}
+
+.newpst-input {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 85.5%;
+}
+
+.newpst-input > form {
+    display: inline-block;
+    width: 100%;
+}
+.newpst-input textarea {
+    float: left;
+    width: 100%;
+    outline: none;
+}
+.attachments {
+    border: 1px solid #eee;
+    display: block;
+    padding: 10px;
+    text-align: right;
+    border-top: 0;
+    background: #fff;
+}
+
+.attachments > ul {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.attachments li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.attachments li i:before {
+    color: #cbc4c4;
+}
+
+.fileContainer {
+    font-size: 11px;
+    margin: 0 0 0 5px;
+    position: relative;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+}
+
+textarea {
+    border: 1px solid #eeeeee;
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 0;
+}
+
+form button {
+    border: medium none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+}
+
+.attachments .fileContainer [type="file"] {
+    right: 6px;
+    top: -18px;
+    width: 20px;
+}
+
+.fileContainer [type=file] {
+    cursor: pointer;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.new-postbox > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+    width: 10.4%;
+}
+
+.live-shot > a {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: top;
+    width: 30%;
+}
+
+.new-postbox img,
+.live-shot > a> img{
+    border-radius: 100%;
+}
+
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.friend-info {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.friend-info > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    width: 8%;
+}
+
+.friend-info > figure img {
+    border-radius: 100%;
+}
+
+.friend-name {
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 90%;
+}
+
+.friend-name > span {
+    color: #999;
+    float: left;
+    font-size: 12px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.post-meta {
+    float: left;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.post-meta > img {
+    float: left;
+    width: 100%;
+}
+
+.we-video-info {
+    float: left;
+    padding: 15px 0 10px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.we-video-info > ul {
+    float: left;
+    width: 100%;
+    line-height: 27px;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.we-video-info > ul li {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 40px;
+}
+
+.we-video-info > ul li span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 3px;
+    position: relative;
+}
+
+.fa-heart {
+    margin-right: 10px;
+}
+
+.nearby-contct {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    margin-top: 35px;
+    padding-left: 0;
+    width: 100%;
+}
+.nearby-contct a{
+    display: inline-block;
+}
+
+.nearby-contct > li {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #eaf1f6;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    transition: all 0.15s linear 0s;
+}
+
+.nearly-pepls {
+    display: block;
+    width: 100%;
+}
+
+.nearly-pepls > figure {
+    display: inline-block;
+    margin-bottom: 0;
+    max-width: 60px;
+    min-width: 60px;
+    vertical-align: middle;
+    width: 60px;
+}
+
+
+.nearly-pepls img {
+    border-radius: 100%;
+}
+
+.pepl-info {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    vertical-align: middle;
+    width: 80%;
+}
+
+.pepl-info > h4 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+#myfriends a.add-butn.more-action {
+    right: 89px;
+}
+
+a.add-butn {
+    background: #007bff;
+    color: #fff;
+    float: right;
+    font-size: 13px;
+    line-height: initial;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    text-transform: capitalize;
+    top: 10px;
+}
+
+.pepl-info span{
+    display: block;
+}
+
+a.add-butn.more-action {
+    background: lightslategray none repeat scroll 0 0;
+    right: 89px;
+}
+
+.nav-link.frnd-btn {
+    color: #778899;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: #fff;
+    border-bottom: 1px solid;
+    color: #007bff;
+}
+
+.frnd-search {
+    margin-top: 40px;
+    width: 38%;
+    padding: 0 13px;
+}
+
+.frndname {
+    margin-right: 56px;
+    vertical-align: middle;
+}

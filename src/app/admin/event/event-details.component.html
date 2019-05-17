@@ -1,0 +1,52 @@
+    
+    <div class="container">
+        <div class="card event-details">
+            <div class="card-header  ">Event Details</div>
+            <div class="card-body">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <div class="text-center">
+                                <img src="assets/images/img1.jpg" class="img-responsive" width="40%" height="70%">
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-bordered">
+                                <tbody *ngFor="let event of events">
+                                    <tr>
+                                        <td> Event Name : </td>
+                                        <td>{{event.eventName}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date : </td>
+                                        <td>
+                                            {{event.eventDate}} 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Event Venue : </td>
+                                        <td> {{event.eventVenue}} </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td> Event host :</td>
+                                        <td>{{event.eventhostedBy}} </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Total no of people :</td>
+                                        <td>{{event.totNoOfPeople}} </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    

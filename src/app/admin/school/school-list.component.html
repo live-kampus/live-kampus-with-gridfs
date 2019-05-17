@@ -1,0 +1,143 @@
+<div class="container" >
+    <div class="cheader">
+        School List
+    </div>
+    
+    <button class="btn btn-primary add" data-toggle="modal" data-target="#addSchool">Add School</button>
+    
+    <table class="table table-bordered city-table">
+        <thead class="thead-light">
+            <tr>
+                <th>School Code</th>
+                <th>School Name</th>
+                <th></th>
+                <th></th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let school of schools">
+                <td>{{school.schoolId}}</td>
+                <td>{{school.schoolName}}</td>
+                <td>
+                    <button type="button" class="btn btn-primary view-btn" data-toggle="modal"
+                    data-target="#detailModal" (click)="viewbtn(school.schoolId)">View</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary edit-btn" data-toggle="modal"
+                    data-target="#editModal" (click)="editbtn(school.schoolId)">Edit</button>
+                </td>
+                <td>
+                        <button type="button" class="btn btn-primary del"  (click)="deleteSchool(school)">Delete</button>
+                    <!-- <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label> -->
+                </td>
+            </tr>
+        </tbody>
+    </table> 
+    <div class="modal fade" id="detailModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">School Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" >
+                    <table class="table table-bordered">
+                        <tbody >
+                            
+                            <tr>
+                                <td>Code</td>
+                                <td>{{school.schoolId}}</td>
+                            </tr>
+                            <tr>
+                                <td>School Name</td>
+                                <td>{{school.schoolName}}</td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>{{school.schoolCity}}</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>State</td>
+                                <td>{{school.schoolState}}</td>
+                                
+                            </tr>  
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- school-edit -->
+    <div class="modal fade" id="editModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">School Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form (ngSubmit)="updateSchool()" #SchoolForm="ngForm">
+                        <div class="form-group">
+                            
+                            <label for="schoolC" class="form-label">School Code</label>
+                            <input type="number" class="form-control" id="schoolC"  [(ngModel)]="school.schoolId" name="school_id"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="schooN" class="form-label">School Name</label>
+                            <input type="text" class="form-control" id="schoolN" [(ngModel)]="school.schoolName" name="school_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="schoolCity" class="form-label">School City</label>
+                            <input type="text" class="form-control" id="schoolCity" [(ngModel)]="school.schoolCity" name="school_city">
+                        </div>
+                        <div class="form-group">
+                            <label for="schoolState" class="form-label">School State</label>
+                            <input type="text" class="form-control" id="schoolState" [(ngModel)]="school.schoolState" name="school_state">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add School -->
+    <div class="modal fade" id="addSchool" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">School Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form (ngSubmit)="addSchool()" #SchoolForm="ngForm">
+                        <div class="form-group">
+                            
+                            <label for="schoolC" class="form-label">School Code</label>
+                            <input type="number" class="form-control" id="schoolC" [(ngModel)]="school.schoolId" name="school_id"> 
+                        </div>
+                        <div class="form-group">
+                            <label for="schooN" class="form-label">School Name</label>
+                            <input type="text" class="form-control" id="schoolN" [(ngModel)]="school.schoolName" name="school_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="schoolCity" class="form-label">School City</label>
+                            <input type="text" class="form-control" id="schoolCity" [(ngModel)]="school.schoolCity" name="school_city">
+                        </div>
+                        <div class="form-group">
+                            <label for="schoolState" class="form-label">School State</label>
+                            <input type="text" class="form-control" id="schoolState" [(ngModel)]="school.schoolState" name="school_state">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

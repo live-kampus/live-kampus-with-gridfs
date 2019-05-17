@@ -1,0 +1,113 @@
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="central-meta">
+            <div class="new-postbox">
+                <figure>
+                    <img src="assets/images/user.jpg" alt="">
+                </figure>
+                <div class="newpst-input">
+                    <form method="post">
+                        <textarea rows="2" placeholder="write something"></textarea>
+                        <div class="attachments">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-image"></i>
+                                    <label class="fileContainer">
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li>
+                                    <i class="fa fa-video"></i>
+                                    <label class="fileContainer">
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li>
+                                    <i class="fa fa-camera"></i>
+                                    <label class="fileContainer">
+                                        <input type="file">
+                                    </label>
+                                </li>
+                                <li>
+                                    <button type="submit" class="btn btn-primary">Post</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="loadMore" *ngFor= "let home of profile">
+            <div class="central-meta item">
+                <div class="user-post">
+                    <div class="friend-info">
+                        <figure>
+                            <img src="assets/images/user.jp" alt="">
+                        </figure>
+                        <div class="friend-name">
+                            <a href="time-line.html" title="">{{home.userName}}</a>
+                            <span>{{home.published}}</span>
+                        </div>
+                        <div class="post-meta">
+                            <img src="assets/images/user-post.jpg" alt="">
+                            <div class="we-video-info">
+                                <ul>
+                                    <li>
+                                        <span class="like" data-toggle="tooltip" title="" data-original-title="like">
+                                            <i class="fa fa-heart"></i>
+                                            <span>2.2k</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description">
+                                <p>
+                                 <a href="#" title="">{{home.tag}}</a>{{home.caption}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="widget">
+            <ul class="live-shots-box">
+                <li>
+                    <h2 class="live-head">Live Shots</h2>
+                </li>
+                <li class="live-shot">
+                    <a href="" data-toggle="modal" data-target="#liveModal">
+                        <img src="assets/images/user.jpg" alt="">
+                    </a>
+                    <div class="shots-details">
+                        <h3>Mehvash</h3>
+                        <span>10 hours ago</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="modal fade" id="liveModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <figure>
+                        <img src="assets/images/user-post.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+

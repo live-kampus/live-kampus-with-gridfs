@@ -1,0 +1,149 @@
+
+<div class="row" >
+	<div class="col-md-3" style="text-align:center">
+		<div class="user-avatar">
+			<figure>
+				<img [src]="url" alt="">
+			</figure>
+			<form class="edit-phto">
+				<i class="fa fa-camera-retro"></i>
+				<label class="fileContainer">
+					Edit Display Photo	<input type="file"  (change)="onFileSelected($event)" 
+					id="exampleFormControlFile1" [(ngModel)]="images.filePath" id="filePath" name="filePath" accept="*/*">
+					
+				</label>
+			</form>
+		</div>
+		<a routerLink="/user/profile/editprofile" class="btn btn-primary edit-btn">Edit Your Profile</a>
+	</div>
+	<div class="col-md-9">
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#home">Timeline</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#menu2">About</a>
+			</li>
+		</ul>
+		
+		
+		<div class="tab-content">
+			<div id="home" class="container tab-pane active"><br>
+				<div class="central-meta">
+					<div class="new-postbox">
+						<figure>
+							<img src={{profile.timeline}} alt="">
+						</figure>
+						<div class="newpst-input">
+							<form method="post">
+								<textarea rows="2" placeholder="write something"></textarea>
+								<div class="attachments">
+									<ul>
+										<li>
+											<i class="fa fa-image"></i>
+											<label class="fileContainer">
+												<input type="file">
+											</label>
+										</li>
+										<li>
+											<i class="fa fa-video"></i>
+											<label class="fileContainer">
+												<input type="file">
+											</label>
+										</li>
+										<li>
+											<i class="fa fa-camera"></i>
+											<label class="fileContainer">
+												<input type="file">
+											</label>
+										</li>
+										<li>
+											<button type="submit" class="btn btn-primary">Post</button>
+										</li>
+									</ul>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="loadMore" >
+					<div class="central-meta item">
+						<div class="user-post">
+							<div class="friend-info"  >
+								<figure>
+									<img src={{profile.postProfile}} alt="">
+								</figure>
+								<div class="friend-name">
+									<a href="time-line.html" title="">{{profile.userName}}</a>
+									<span>{{profile.published}}</span>
+								</div>
+								<div class="post-meta"  >
+									<img src="{{profile.timelinePost}}" alt="">
+									<div class="we-video-info">
+										<ul>
+											<li>
+												<span class="like" data-toggle="tooltip" title="" data-original-title="like">
+													<i class="fa fa-heart"></i>
+													<span>2.2k</span>
+												</span>
+											</li>
+										</ul>
+									</div>
+									<div class="description" >
+										<p>
+											<a href="#" title="">{{profile.tag}}</a>
+											<br>
+											{{profile.caption}}
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="menu2" class="container tab-pane fade"><br>
+				<div class="central-meta">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>Name</td>
+								<td>{{user.name}}</td>
+							</tr>
+							<tr>
+								<td>Email</td>
+								<td>{{user.email}}</td>
+							</tr>
+							<tr>
+								<td>Address</td>
+								<td>{{user.address}}</td>
+							</tr>
+							<tr>
+								<td>State</td>                    
+								<td>{{user.state}}</td>
+							</tr>
+							<tr>
+								<td>City</td>
+								<td>{{profile.city}}</td>
+							</tr>
+							<tr>
+								<td>School</td>
+								<td>{{user.schoolName}}</td>
+							</tr>
+							<tr>
+								<td>Gender</td>
+								<td>{{user.gender}}</td>
+							</tr>
+							<tr>
+								<td>DOB</td>
+								<td>{{user.dateOfBirth}}</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

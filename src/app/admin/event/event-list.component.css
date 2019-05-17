@@ -1,0 +1,44 @@
+.event-list {
+    margin-top: 20px;
+}
+.todays{
+
+    padding-right:150px;
+    color: brown
+}
+
+.upcoming{
+
+    padding-right: 150px;
+    color: brown
+}
+.recommended{
+
+    padding-right: 150px;
+    color:brown
+}
+.all{
+
+    padding-right: 150px;
+    color:brown
+}
+
+.event-details{
+
+
+    margin-top: 20px;
+
+}
+.card{
+    margin-top: 20px;
+}
+.container{
+    margin-left: 280px;
+    position: absolute;
+    top: 100px;
+    }
+  
+    .del {
+        background-color: red;
+        border: 1px solid red;
+    }

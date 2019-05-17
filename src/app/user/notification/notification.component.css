@@ -1,0 +1,215 @@
+
+
+a.logo{
+    width: 5%;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar-form> .search-wrapper {
+    position: relative;
+    margin: 7px 0;
+}
+
+.form-group .fa-search {
+    position: absolute;
+    right: 16px;
+    top: 9px;
+    color:#575b5f;
+}
+
+input.search-box{
+    border: 1px solid #575b5f;
+}
+
+.form-group input.form-control {
+    background: rgba(255,255,255, 0.2);
+    box-shadow: none;
+    min-width: 288px;
+    color: #575b5f;
+    height: 32px;
+    font-size: 13px;
+}
+
+.header-icon{
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+    color: #999;
+}
+
+.header-icon i {
+    font-size: 20px;
+}
+
+.header-icon li{
+    padding-right: 20px;
+}
+
+
+.naves{
+    list-style-type: none;
+}
+
+.body-wrapper {
+    background: #f4f2f2;
+}
+
+.widget{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+}
+
+.body-wrapper > .container {
+    padding-top: 50px;
+}
+
+.widget > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 50px 25px 20px;
+    width: 100%;
+}
+
+.widget > ul >li {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.widget > ul > li i{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: baseline;
+    color: #999;
+    margin-right: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.widget ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+}
+
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.f-title {
+    font-size: 17.5px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    border-bottom: 2px solid #df3826;
+}
+
+.notification-box {
+    display: inline-block;
+    width: 100%;
+}
+
+.notification-box > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-left: 0;
+    width: 100%;
+}
+
+.notification-box > ul > li {
+    border-bottom: 1px solid #e1e8ed;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.notification-box > ul li figure {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+    max-width: 45px;
+    min-width: 45px;
+    vertical-align: top;
+}
+
+.notification-box > ul li figure {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+    max-width: 45px;
+    min-width: 45px;
+    vertical-align: top;
+}
+
+.notification-box > ul li figure img {
+    border-radius: 100%;
+}
+
+.notifi-meta {
+    display: inline-block;
+    line-height: initial;
+    vertical-align: middle;
+    width: 86%;
+}
+
+.notifi-meta > p {
+    font-size: 15px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    color: #3a3a3a;
+}
+
+.notifi-meta > span {
+    color: #999;
+    font-size: 12px;
+}
+
+.notification-box > ul li > i.del {
+    cursor: pointer;
+    display: inline-block;
+    opacity: 0;
+    text-align: right;
+    vertical-align: top;
+    visibility: hidden;
+    transition: all 0.2s linear 0s;
+    color: red;
+
+}
+
+.notification-box>ul li:hover i.del{
+    opacity: 1;
+    visibility: visible;
+}
+
+.f-title .fa-bell {
+    margin-right: 8px;
+    color: #df3826;
+}

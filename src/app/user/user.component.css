@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,400i,500,700,800');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+.head{
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+}
+.navbar {
+    width: 81%;
+    margin: 0 auto;
+}
+
+a.logo{
+    width: 5%;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+}
+
+.navbar-form> .search-wrapper {
+    position: relative;
+    margin: 7px 0;
+}
+
+.form-group .fa-search {
+    position: absolute;
+    right: 16px;
+    top: 9px;
+    color:#575b5f;
+}
+
+input.search-box{
+    border: 1px solid #575b5f;
+}
+
+.form-group input.form-control {
+    background: rgba(255,255,255, 0.2);
+    box-shadow: none;
+    min-width: 288px;
+    color: #575b5f;
+    height: 32px;
+    font-size: 13px;
+}
+
+.header-icon{
+    list-style-type: none;
+    display: flex;
+    margin: 10px 0;
+    color: #999;
+}
+
+.header-icon i {
+    font-size: 20px;
+}
+
+.header-icon li{
+    padding-right: 20px;
+}
+
+
+.naves{
+    list-style-type: none;
+}
+
+.body-wrapper {
+    background: #f4f2f2;
+}
+
+.widget{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #fff;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+}
+
+.body-wrapper > .container {
+    padding-top: 50px;
+}
+
+.widget > ul {
+    display: inline-block;
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding: 50px 25px 20px;
+    width: 100%;
+}
+
+.widget > ul >li {
+    display: inline-block;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.widget > ul > li i{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: baseline;
+    color: #999;
+    margin-right: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.widget ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    display: inline-block;
+    position: relative;
+    color: #999;
+    font-family: 'Roboto', sans-serif;
+}
+
+.central-meta {
+    background: #fdfdfd none repeat scroll 0 0;
+    border: 1px solid #ede9e9;
+    border-radius: 3px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+}
